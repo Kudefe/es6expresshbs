@@ -1,0 +1,25 @@
+{
+  "name": "es6expresshbs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kudefe/es6expresshbs.git"
+  },
+  "author": "Gonzalo Gutierrez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kudefe/es6expresshbs/issues"
+  },
+  "homepage": "https://github.com/Kudefe/es6expresshbs#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "dotenv": "^4.0.0",
+    "nodemon": "^1.11.0"
+  }
+}
