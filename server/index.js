@@ -1,2 +1,5 @@
-console.log(process.env.SECRET_MESSAGE);
-console.log(process.env.TOKEN);
+import app from './app'
+
+app.listen(3000, () => {
+  console.log('corriendo en puerto 3000');
+})

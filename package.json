@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel src -d lib"
+    "start": "nodemon bin/dev",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && mkdir dist && babel server -s -s dist",
+    "production": "npm run build && node bin/production"
   },
   "repository": {
     "type": "git",
@@ -19,7 +22,11 @@
   "homepage": "https://github.com/Kudefe/es6expresshbs#readme",
   "devDependencies": {
     "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.5.2",
     "dotenv": "^4.0.0",
     "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "express": "^4.15.3"
   }
 }
