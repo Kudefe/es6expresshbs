@@ -1,10 +1,15 @@
 import express from 'express'
 
 //controller import
-import basicController from './controllers/basicController'
+import homeController from './controllers/home'
+import gamesController from './controllers/games'
+import addGameController from './controllers/addGame'
 
 const routes = express()
 
-routes.get('/', basicController.get)
+//import todos los controllers
+routes.get('/', homeController.get)
+routes.get('/games', gamesController.get)
+routes.get('/games/add', addGameController.get)
 
 export default routes
