@@ -1,1 +1,16 @@
-<h1>Add Game!</h1>
+<form class="ui form" action="/games/add" method="POST">
+  <div class="field">
+    <label>Title</label>
+    <input type="text" name="title" placeholder="title">
+  </div>
+  <div class="field">
+    <label>Author</label>
+    <input type="text" name="author" placeholder="author">
+  </div>
+  <div class="field">
+    <label>Text</label>
+    <textarea name="body" rows="8" cols="80"></textarea>
+  </div>
+  <hr>
+  <input class="ui button" type="submit" value="Submit">
+</form>

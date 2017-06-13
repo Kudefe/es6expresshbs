@@ -11,5 +11,6 @@ const routes = express()
 routes.get('/', homeController.get)
 routes.get('/games', gamesController.get)
 routes.get('/games/add', addGameController.get)
+routes.post('/games/add', addGameController.post)
 
 export default routes
