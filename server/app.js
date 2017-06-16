@@ -28,6 +28,9 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
 
+//set public folder
+app.use(express.static(path.join(__dirname, 'public')))
+
 //use routes
 app.use('/', routes);
 

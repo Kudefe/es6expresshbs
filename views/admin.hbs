@@ -1,4 +1,4 @@
-<p>aqui es donde tengo que buscar for each en handlebars</p>
+<p>El panel de administrador</p>
 
   {{#each games}}
   <div class="ui grid">
@@ -6,7 +6,7 @@
       <div class="ui cards">
         <div class="card">
           <div class="content">
-            <div class="header"> <a href="/games/{{this.id}}" >{{this.title}}</a></div>
+            <div class="header"> <a href="/admin/{{this.id}}" >{{this.title}}</a></div>
             <div class="meta">{{this.author}}</div>
             <div class="description">
           {{this.body}}
